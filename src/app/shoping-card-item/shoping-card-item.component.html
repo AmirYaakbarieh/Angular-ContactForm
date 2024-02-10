@@ -1,0 +1,16 @@
+<div class="shoping-cart-item">
+    <div class="content">
+        <img class="Product-image" [src]="item?.image" >
+    <div class="Product-name">{{item?.name}}</div>
+    <div class="Product-price">${{item?.price}}</div>
+
+    <div class="action-list">
+        <button (click)="plusFun()" class="button-plus">+</button> 
+        <input disabled  [value]="item?.count" class="textfiled" type="number">
+        <button (click)="minuseFun()"  class="button-minuse">-</button> 
+        <button  (click)="del(item?.id)" class="button-del">Delete</button> 
+    </div>
+    </div>
+</div>
+
+

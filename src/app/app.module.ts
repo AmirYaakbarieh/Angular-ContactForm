@@ -13,6 +13,8 @@ import { MainComponent } from './main/main.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NavComponent } from './nav/nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ShopingCardItemComponent } from './shoping-card-item/shoping-card-item.component';
+import { ShppingComponent } from './shpping/shpping.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     MainComponent,
     NotFoundComponent,
     NavComponent,
+    ShopingCardItemComponent,
+    ShppingComponent,
     
   ],
   imports: [

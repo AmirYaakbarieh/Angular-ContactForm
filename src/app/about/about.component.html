@@ -1,1 +1,16 @@
-<p>about works!</p>
+<h1 class="text-center">Shaping cart</h1>
+<br>
+    <button (click)="initCart()">Init cart</button>
+<br>
+<br>
+<div class="shaping-card">
+    <app-shoping-card-item 
+        *ngFor="let itemValue of items" [item]="itemValue"  
+        (deletItem)="deletEvent($event)"
+        (onCountUpdatted)="onCountUpdattedEvent($event)"
+        (onRefresh)="refresh()"
+        >
+
+    </app-shoping-card-item>
+</div>
+<h3>total price: $ {{totalPrice}} </h3>
